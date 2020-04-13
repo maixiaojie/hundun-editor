@@ -16,11 +16,11 @@ export default defineComponent({
     const editorRef = ref<HTMLElement>("");
     onMounted(() => {
       editorRef.value.onkeydown = function(e: KeyboardEvent) {
-        if (e.keyCode === 13) {
-          // 回车插入段落
-          console.log(1)
-          document.execCommand("insertHTML", false, "<p><br></p>");
-        }
+        // if (e.keyCode === 13) {
+        //   // 回车插入段落
+        //   console.log(1)
+        //   document.execCommand("insertHTML", false, "<p><br></p>");
+        // }
       };
     });
     return {
